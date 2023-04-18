@@ -64,6 +64,7 @@ class Tokens extends AbstractResource
 
 		if( $access_token ){
 			$params["access_token"] = $access_token;
+			$params["update"] = ["account_selection_enabled" => true];
 		}
 
 		if( $redirect_uri ){
